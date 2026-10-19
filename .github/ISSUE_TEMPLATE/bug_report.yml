@@ -1,0 +1,97 @@
+name: Bug report
+description: Something in Shader Script doesn't work as it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting! The more of this you fill in, the sooner the bug can be found and fixed.
+        Questions about how to do something are best asked in [Discussions, Q&A](../discussions/categories/q-a).
+
+  - type: input
+    id: package-version
+    attributes:
+      label: Shader Script version
+      description: Window > Package Manager > Shader Script.
+      placeholder: "0.1.0"
+    validations:
+      required: true
+
+  - type: input
+    id: unity-version
+    attributes:
+      label: Unity version
+      placeholder: "2022.3.62f3"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: pipeline
+    attributes:
+      label: Render pipeline
+      options:
+        - URP
+        - HDRP
+        - Both
+    validations:
+      required: true
+
+  - type: input
+    id: pipeline-version
+    attributes:
+      label: Render pipeline version
+      description: The version of the URP or HDRP package.
+      placeholder: "14.0.12"
+
+  - type: dropdown
+    id: graphics-api
+    attributes:
+      label: Graphics API
+      description: Edit > Project Settings > Player > Other Settings > Graphics APIs, the first one in the list.
+      options:
+        - Direct3D 11
+        - Direct3D 12
+        - Vulkan
+        - Metal
+        - OpenGL / OpenGL ES
+        - Don't know
+
+  - type: textarea
+    id: description
+    attributes:
+      label: What happens
+      description: What you did, what you expected, and what happened instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Create a Lit shader with the code below.
+        2. Assign it to a material on a cube.
+        3. ...
+
+  - type: textarea
+    id: shader-code
+    attributes:
+      label: Shader code
+      description: The C# code of the shader, or the smallest part of it that shows the problem.
+      render: csharp
+
+  - type: textarea
+    id: console
+    attributes:
+      label: Console messages
+      description: Errors and warnings from the Console, including their diagnostic codes (SSG...).
+      render: text
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the existing issues and discussions.
+          required: true
+        - label: I checked the Common problems section of the manual.

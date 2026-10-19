@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask a question
+    url: https://github.com/ahilevich/ShaderScript-Support/discussions/categories/q-a
+    about: How to do something with Shader Script. Questions go to Discussions, so the answers help others too.
+  - name: Documentation
+    url: https://ahilevich.github.io/ShaderScript/
+    about: The manual, the API reference and the Common problems section.
+  - name: Private matters
+    url: mailto:ahilevich.dev@gmail.com
+    about: Refunds, licensing, and anything you don't want to post publicly.

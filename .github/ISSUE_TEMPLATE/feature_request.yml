@@ -1,0 +1,50 @@
+name: Feature request
+description: Something Shader Script can't do yet.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check the [Roadmap](https://ahilevich.github.io/ShaderScript/dev/manual/roadmap.html) first: if the
+        feature is there as **On request**, this is exactly the way to ask for it. Upvote existing requests with 👍.
+
+  - type: textarea
+    id: feature
+    attributes:
+      label: What you need
+      description: The feature, shader kind or function you'd like.
+    validations:
+      required: true
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: What for
+      description: What you're making, and how this would help. A real use case helps choose the right design.
+    validations:
+      required: true
+
+  - type: input
+    id: shader-graph
+    attributes:
+      label: Shader Graph equivalent
+      description: If Shader Graph can do this, the name of its node or feature.
+      placeholder: "Custom Function node"
+
+  - type: dropdown
+    id: pipeline
+    attributes:
+      label: Render pipeline
+      options:
+        - URP
+        - HDRP
+        - Both
+        - Doesn't matter
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched the existing issues and discussions.
+          required: true
