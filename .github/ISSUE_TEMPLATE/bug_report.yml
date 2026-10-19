@@ -13,7 +13,7 @@ body:
     attributes:
       label: Shader Script version
       description: Window > Package Manager > Shader Script.
-      placeholder: "0.1.0"
+      placeholder: "1.0.0"
     validations:
       required: true
 

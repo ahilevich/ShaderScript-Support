@@ -13,7 +13,7 @@ body:
     attributes:
       label: Versions
       description: Shader Script, Unity, and URP or HDRP.
-      placeholder: "Shader Script 0.1.0, Unity 2022.3.62f3, URP 14.0.12"
+      placeholder: "Shader Script 1.0.0, Unity 2022.3.62f3, URP 14.0.12"
 
   - type: textarea
     id: shader-code
