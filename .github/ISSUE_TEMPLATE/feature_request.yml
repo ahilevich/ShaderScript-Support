@@ -5,7 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please check the [Roadmap](https://ahilevich.github.io/ShaderScript/dev/manual/roadmap.html) first: if the
+        Please check the [Roadmap](https://ahilevich.github.io/ShaderScript/latest/manual/roadmap.html) first: if the
         feature is there as **On request**, this is exactly the way to ask for it. Upvote existing requests with 👍.
 
   - type: textarea
